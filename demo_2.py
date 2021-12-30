@@ -17,6 +17,10 @@
 # len - calulate len of in iterable object
 # len('1234')
 
+# range(start, stop, step) - Returns an object of type <class 'range'> that can be used to get
+# sequence of numbers, starting from 0 by default
+# and increments by 1 by default and stops at specified number (Exclusive)
+
 # Find object's type
 var = int()
 type(var)
