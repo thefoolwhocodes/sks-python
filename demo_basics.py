@@ -21,6 +21,11 @@
 # sequence of numbers, starting from 0 by default
 # and increments by 1 by default and stops at specified number (Exclusive)
 
+# del
+# Remove variables, lists, or parts of a list etc.
+# If this variable was the last remaining reference to an object, the object will be removed from memory.
+# If, on the other hand, other variables still refer to this object, the object won’t be deleted.
+
 # Find object's type
 var = int()
 type(var)
