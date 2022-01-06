@@ -319,3 +319,39 @@ print(statement[2::-1])
 
 print(statement[-1:-5:-1])
 # ssal
+
+'''
+Output:20
+The evaluation for "0 or 20" happens from left to right.
+As 0 evaluates to False, and their is a following or, it has to evaluate next statement, that leads to value being 20.
+'''
+var = 0 or 20
+print(var)
+# 20
+
+'''
+Output:1
+The evaluation for "1 or 20" happens from left to right.
+As 1 evaluates to True, and their is a following or, it need not evaluate next statement, that leads to value being 1.
+'''
+var = 1 or 20
+print(var)
+# 1
+
+'''
+Output:0
+The evaluation for "0 and 20" happens from left to right.
+As 0 evaluates to False, and their is a following and, it need not evaluate next statement, that leads to value being 0.
+'''
+var = 0 and 20
+print(var)
+# 0
+
+'''
+Output:20
+The evaluation for "1 and 20" happens from left to right.
+As 1 evaluates to True, and their is a following and, it has to evaluate next statement, that leads to value being 20.
+'''
+var = 1 and 20
+print(var)
+# 20
