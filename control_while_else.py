@@ -1,5 +1,6 @@
 """
 While Else examples
+Program demonstrates that when break condition executes, it scopes up to else.
 """
 
 # Program to find if a given number is prime or not.
