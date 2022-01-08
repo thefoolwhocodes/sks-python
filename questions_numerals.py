@@ -1,9 +1,5 @@
 # 10. Write a Python program to count number of digits in a number.
-count = 0
-n = input('Enter a number: ')
-for i in n:
-    count += 1
-print('total number of dgits are: %d' %(count))
+
 
 # 1. Write a Python program to print all natural numbers from 1 to n.
 n = int(input('Enter a number: '))
@@ -73,13 +69,18 @@ for i in range(n, n*10+1, n):
     print(i)
 
 # 10. Write a Python program to count number of digits in a number.
+# First way (Integer input)
 number = int(input('Enter a number: '))
 count = 0
 temp_number = number
-
 while temp_number > 0:
-    last_num = temp_number % 10
+    temp_number = int(temp_number / 10)
     count += 1
-    temp_number = temp_number - last_num * 10
-    print(temp_number)
-print(count)
+print('Total number of digits are: %d' % count)
+
+# Second way (String input)
+number = input('Enter a number: ')
+count = 0
+for i in number:
+    count += 1
+print('Total number of digits are: %d' % count)
