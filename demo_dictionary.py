@@ -4,7 +4,7 @@
 # Stores mappings of unique key to values.
 # Key can only be Immutable value.
 
-employee ={}
+employee = {}
 print(type(employee))
 # <class 'dict'>
 
