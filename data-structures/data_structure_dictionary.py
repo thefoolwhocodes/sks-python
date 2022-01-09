@@ -66,23 +66,6 @@ print('age' in employee1)
 print('Aakash' in employee1)
 # False
 
-# Remove the item from dictionary using key
-del employee1['location']
-print(employee1)
-# {'name': 'Aakash', 'age': 35, (1, 2, 3): 'Mohan', 'Name': 'Aakash'}
-print(employee2)
-# {'name': 'Aakash', 'age': 35, (1, 2, 3): 'Mohan', 'Name': 'Aakash'}
-
-# Get list of keys present in dictionary
-list_of_keys = list(employee1)
-print(list_of_keys)
-# ['name', 'age', (1, 2, 3), 'Name']
-
-# Get tuple of keys present in dictionary
-tuple_of_keys = tuple(employee1)
-print(tuple_of_keys)
-# 'name', 'age', (1, 2, 3), 'Name')
-
 # Dictionary of dictionary
 employee1 = {1:{'name':'Jatin', 'age':35}, 2:{'name':'Rohan', 'age':25}}
 print(employee1[2]['name'])
