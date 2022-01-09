@@ -1,6 +1,6 @@
 """
 Demonstration of Basic Syntax and rules for Positional and Keyword parameters
-Demonstration of Variable length Positional arguments to function
+Demonstration of Variable length Positional arguments *args to function
 Demonstration of default arguments
 Demonstration of Keyworded (not a typo), variable-length argument list **kwargs
 Demonstration of Following errors
@@ -10,6 +10,8 @@ Demonstration of Following errors
 
 
 # Demonstration of Basic Syntax and rules for Positional and Keyword parameters
+
+
 def my_function1(var1, var2):
     print(var1, var2)
 
@@ -31,8 +33,10 @@ print("Example5: Error: got multiple values for argument 'var1'")
 # my_function1(10,var1=20)
 
 
-# Demonstration of Variable length Positional arguments to function
+# Demonstration of Variable length Positional arguments *args to function
 # Note: The type of variable length positional argument (args in current example) is always tuple
+
+
 def my_function2(*args):
     """
     Function accepts single variable of variable length positional arguments type
