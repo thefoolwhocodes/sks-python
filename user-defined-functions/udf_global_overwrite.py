@@ -1,10 +1,10 @@
-'''
+"""
 Following program demonstrates that
     Example1:Variables that are only referenced inside a function, are implicitly global.
-    Example2:Even if we try to reassign value to a global variable, from inside the function, its existence is only scoped to the function, that is the global 
-        varaible's value is not changed.
+    Example2:Even if we try to reassign value to a global variable, from inside the function, its existence is only scoped to the function, that is the global
+        variable's value is not changed.
     Example3:If we want to overwrite global variable, we need to explicitly use global keyword from inside the function.
-'''
+"""
 
 print("Example1")
 my_var1=1
