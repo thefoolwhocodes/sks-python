@@ -1,10 +1,13 @@
-
-'''
+"""
 Demonstration of Basic Syntax and rules for Positional and Keyword parameters
-'''
+"""
+
 print("----------------------Example set 1----------------------")
+
+
 def my_function1(var1,var2):
     print(var1,var2)
+
 
 print("Example1: Demonstration of Positional parameters/arguments")
 my_function1(10,20) 
@@ -28,6 +31,8 @@ Demonstration of passing variable number of positional arguments to function
 Note: Type of args is tuple 
 '''
 print("----------------------Example set 2----------------------")
+
+
 def my_function2(*args):
     '''
     Function accepts single variable of variable length positional arguments type
@@ -37,6 +42,7 @@ def my_function2(*args):
     for var in args:
         print("Values inside args:", var)
         print(type(var))
+
 
 my_function2() #This call will cause no error
 my_function2(1,2,3,4,("a","b","c","d"),[9,19,12,34])
@@ -70,8 +76,11 @@ print(my_function3("add")) # This line will cause not error
 Demonstration of default arguments
 '''
 print("----------------------Example set 3----------------------")
+
+
 def my_function4(var1=10,var2=20):
     print("Variable1:", var1 ," Variable2:", var2)
+
 
 #Positional parameters
 my_function4()
@@ -94,9 +103,12 @@ Demonstration of keyworded, variable-length argument list
 Note: Type of args is dic
 '''
 print("----------------------Example set 4----------------------")
+
+
 def my_function6(**kwargs):
     print("Type of kwargs:", type(kwargs))
     print(kwargs)
+
 
 my_function6()
 my_function6(var1=10,var2=20)
@@ -107,5 +119,6 @@ def my_function7(a, b , *c, **d):
     print(b)
     print(c)
     print(d)
+
 
 my_function7(1, 2, 3, 4, 5, 6, 7, 8, d = 10, e= 20, c = 30)
